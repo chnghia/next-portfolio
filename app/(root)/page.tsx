@@ -19,7 +19,7 @@ import { featuredProjects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
-import profileImg from "@/public/profile-img.jpg";
+import profileImg from "@/public/profile-img.png";
 
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title} | Modern Next.js Developer Portfolio Template`,
@@ -81,7 +81,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Naman Barkiya - Full Stack Developer Portfolio"
+            alt="NghiaCH - Full Stack Developer Portfolio"
             priority
           />
           <AnimatedText
@@ -89,7 +89,7 @@ export default function IndexPage() {
             delay={0.2}
             className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Naman Barkiya
+            NghiaCH
           </AnimatedText>
           <AnimatedText
             as="h3"
@@ -137,7 +137,7 @@ export default function IndexPage() {
           </AnimatedText>
         </div>
       </section>
-      <AnimatedSection
+      {/*<AnimatedSection
         className="container space-y-6 bg-muted py-10"
         id="skills"
       >
@@ -164,7 +164,7 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-      </AnimatedSection>
+      </AnimatedSection>*/}
       <AnimatedSection
         direction="right"
         className="container space-y-6 py-10 my-14"
@@ -209,7 +209,7 @@ export default function IndexPage() {
                     </p>
                 </div> */}
       </AnimatedSection>
-      <AnimatedSection
+      {/*<AnimatedSection
         direction="down"
         className="container space-y-6 bg-muted py-10 my-14"
         id="contributions"
@@ -239,8 +239,8 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-      </AnimatedSection>
-      <AnimatedSection
+      </AnimatedSection>*/}
+      {/*<AnimatedSection
         direction="left"
         className="container space-y-6 py-10 my-14"
         id="experience"
@@ -278,7 +278,7 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
-      </AnimatedSection>
+      </AnimatedSection>*/}
     </ClientPageWrapper>
   );
 }

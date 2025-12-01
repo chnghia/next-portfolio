@@ -10,7 +10,7 @@ import CustomTooltip from "@/components/ui/custom-tooltip";
 import { Projects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
 import { cn, formatDateFromObj } from "@/lib/utils";
-import profileImg from "@/public/profile-img.jpg";
+import profileImg from "@/public/profile-img.png";
 
 interface ProjectPageProps {
   params: {
@@ -79,7 +79,7 @@ export default function Project({ params }: ProjectPageProps) {
             />
 
             <div className="flex-1 text-left leading-tight">
-              <p className="font-medium">{"Naman Barkiya"}</p>
+              {/*<p className="font-medium">{"Naman Barkiya"}</p>*/}
               <p className="text-[12px] text-muted-foreground">
                 @{siteConfig.username}
               </p>
@@ -116,9 +116,11 @@ export default function Project({ params }: ProjectPageProps) {
       </div>
 
       <div className="mb-7 ">
+        {project.pagesInfoArr.length > 0 && (
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
-          Page Info
-        </h2>
+            Project Info
+          </h2>
+        )}
         {project.pagesInfoArr.map((page, ind) => (
           <div key={ind}>
             <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">

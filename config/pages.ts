@@ -18,16 +18,7 @@ export const pagesConfig: PagesConfig = {
     description: "Welcome to my portfolio website.",
     metadata: {
       title: "Home",
-      description: "Naman Barkiya's portfolio website.",
-    },
-  },
-  skills: {
-    title: "Skills",
-    description: "Key skills that define my professional identity.",
-    metadata: {
-      title: "Skills",
-      description:
-        "Naman Barkiya's key skills that define his professional identity.",
+      description: "NghiaCH's portfolio website.",
     },
   },
   projects: {
@@ -44,32 +35,6 @@ export const pagesConfig: PagesConfig = {
     metadata: {
       title: "Contact",
       description: "Contact Naman Barkiya.",
-    },
-  },
-  contributions: {
-    title: "Contributions",
-    description: "Open-source contributions and community involvement.",
-    metadata: {
-      title: "Contributions",
-      description:
-        "Naman Barkiya's open-source contributions and community involvement.",
-    },
-  },
-  resume: {
-    title: "Resume",
-    description: "Naman Barkiya's resume.",
-    metadata: {
-      title: "Resume",
-      description: "Naman Barkiya's resume.",
-    },
-  },
-  experience: {
-    title: "Experience",
-    description: "Professional journey and career timeline.",
-    metadata: {
-      title: "Experience",
-      description:
-        "Naman Barkiya's professional journey and experience timeline.",
     },
   },
 };
