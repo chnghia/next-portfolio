@@ -44,6 +44,16 @@ const getYouTubeEmbedUrl = (url: string) => {
   }
 };
 
+export async function generateStaticParams() {
+  // Fetch all project IDs from your data source (e.g., an API, database)
+  // const projects = await fetch('/projects').then((res) => res.json());
+
+  // Map the project IDs to the format expected by generateStaticParams
+  return Projects.map((project) => ({
+    projectId: project.id, // Assuming your project object has an 'id' property
+  }));
+}
+
 export default function Project({ params }: ProjectPageProps) {
   let project = Projects.find((val) => val.id === params.projectId);
   if (!project) {

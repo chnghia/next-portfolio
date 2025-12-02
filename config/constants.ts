@@ -60,7 +60,20 @@ export type ValidSkills =
   | "FastAPI"
   | "SQL"
   | "NoSQL"
-  | "Framer Motion";
+  | "Framer Motion"
+  | "Python"
+  | "Bash"
+  | "Gemini API"
+  | "LM Studio"
+  | "JSON"
+  | "jq"
+  | "YOLO"
+  | "Python"
+  | "Swift"
+  | "iOS"
+  | "Android"
+  | "Computer Vision"
+  | "Edge AI";
 
 export type ValidCategory =
   | "Full Stack"
@@ -69,15 +82,18 @@ export type ValidCategory =
   | "UI/UX"
   | "Web Dev"
   | "Mobile Dev"
-  | "3D Modeling";
+  | "3D Modeling"
+  | "Developer Tools"
+  | "Automation"
+  | "Generative AI"
+  | "AI"
+  | "SportsTech"
+  | "Sports Tech"
+  | "Computer Vision";
 
 export type ValidExpType = "Personal" | "Professional";
 
 export type ValidPages =
   | "home"
-  | "skills"
   | "projects"
-  | "experience"
-  | "contact"
-  | "contributions"
-  | "resume";
+  | "contact";

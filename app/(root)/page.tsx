@@ -37,8 +37,8 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Full Stack Developer",
-    sameAs: [siteConfig.links.github, siteConfig.links.twitter],
+    jobTitle: siteConfig.jobTitle,
+    sameAs: [siteConfig.links.github],
   };
 
   // Structured data for website as a software application (template)
@@ -96,22 +96,21 @@ export default function IndexPage() {
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Full Stack Developer
+            Principal Engineer
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Open-source Next.js portfolio template. Fork this on GitHub to
-              create your own developer portfolio.
+              AI & Software Engineer with a strong foundation in system infrastructure and SDLC. Aiming to leverage technical expertise to build robust applications. Team-oriented and motivated by complex system architecture and problem-solving
             </p>
           </div>
 
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
               <Link
-                href={"https://github.com/namanbarkiya"}
+                href={"https://github.com/chnghia"}
                 target="_blank"
                 className={cn(buttonVariants({ size: "lg" }))}
-                aria-label="View Naman Barkiya's GitHub profile"
+                aria-label="View NghiaCH's GitHub profile"
               >
                 <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
               </Link>
@@ -126,7 +125,7 @@ export default function IndexPage() {
                     size: "lg",
                   })
                 )}
-                aria-label="Contact Naman Barkiya"
+                aria-label="Contact NghiaCH"
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
