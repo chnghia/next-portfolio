@@ -25,14 +25,14 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
         p: ({ node, ...props }) => (
           <p className="my-4 leading-7 text-muted-foreground" {...props} />
         ),
-        ul: ({ node, ordered, ...props }) => (
+        ul: ({ node, ...props }) => (
           <ul className="my-4 list-disc space-y-2 pl-6 text-muted-foreground" {...props} />
         ),
-        ol: ({ node, ordered, ...props }) => (
+        ol: ({ node, ...props }) => (
           <ol className="my-4 list-decimal space-y-2 pl-6 text-muted-foreground" {...props} />
         ),
         li: ({ node, ...props }) => <li className="leading-7" {...props} />,
-        code: ({ node, inline, className, children, ...props }) => {
+        code: ({ node, inline, className, children, ...props }: any) => {
           if (inline) {
             return (
               <code
