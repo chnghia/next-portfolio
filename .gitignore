@@ -36,3 +36,10 @@ yarn-error.log*
 next-env.d.ts
 
 */__pycache__/*
+
+/portfolio-ai/.venv/
+/portfolio-ai/__pycache__/
+/portfolio-ai/projects.json
+/portfolio-ai/outputs/
+/portfolio-ai/prompts/
+/portfolio-ai/thumbnails/

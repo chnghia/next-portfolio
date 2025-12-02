@@ -1,0 +1,62 @@
+# ROLE
+Act as a Senior Technical Portfolio Writer & System Architect. Your goal is to transform raw project information into a structured JSON showcase format that highlights technical depth, system design decisions, and business impact.
+
+# INPUT DATA
+Please use the following details to generate the content:
+- **Project Name:** Golf Detect
+- **Role:** Lead AI
+- **Timeline:** Feb 2025 - May 2025
+- **Business Context:** A tool to automate analytics the golf swing and ball trajectory for golfers. Also, add the effects of the golf swing and ball trajectory. For training and practice
+- **Tech Stack:** YOLO, Python, Swift, IOS, Android
+- **Key Features & System Design:** Prepare dataset, training process, and deploy to devices.
+- **My Contributions:** From dataset to model training, and deploy to devices. Take care of the model deployment process, ensuring optimal performance and scalability.
+
+# INSTRUCTIONS
+1. **Tone:** Professional, insightful, simple structure, and impact-oriented.
+2. **Short Description:** A concise 1-sentence hook combining the project's purpose and main tech stack.
+3. **Description Details (Paragraphs):** - Paragraph 1: Focus on the Business Problem & Solution (What is the product, who is it for?).
+   - Paragraph 2: Focus on System Design & Architecture (How was it built? Scalability, security, or performance highlights).
+4. **Description Details (Bullets):** Focus strictly on *metrics* and *specific technical contributions*. Use strong action verbs (e.g., Designed, Optimized, Migrated).
+5. **Pages Info:** Break down the project into 2-3 key visual modules (e.g., "Dashboard", "Management Module", "Mobile View") based on the description.
+6. **Dates:** Format specifically as `new Date("YYYY-MM-DD")`.
+
+# OUTPUT FORMAT
+Return ONLY the raw JSON object (do not wrap in markdown code blocks if possible, or just the code block). Adhere strictly to this schema:
+
+{
+  "id": "generate-a-kebab-case-id-from-project-name",
+  "companyName": "<Project Name>",
+  "type": "Professional",
+  "category": ["<Extract 2-3 relevant tags e.g., FinTech, SaaS, AI>"],
+  "shortDescription": "<One sentence summary>",
+  "websiteLink": "#",
+  "techStack": [
+    "<List of tech stacks>",
+  ],
+  "startDate": new Date("<YYYY-MM-DD>"),
+  "endDate": new Date("<YYYY-MM-DD>"),
+  "companyLogoImg": "/showcases/<kebab-case-name>.png",
+  "descriptionDetails": {
+    "paragraphs": [
+      "<Paragraph 1: Business & Product focus>",
+      "<Paragraph 2: Technical & Architecture focus>",
+    ],
+    "bullets": [
+      "<Bullet 1: Technical Contribution/Metric>",
+      "<Bullet 2: Technical Contribution/Metric>",
+      "<Bullet 3: Technical Contribution/Metric>",
+    ],
+  },
+  "pagesInfoArr": [
+    {
+      "title": "<Feature/Page Name 1>",
+      "description": "<Short description of this feature's technical complexity or function>",
+      "imgArr": ["/showcases/<kebab-case-name>-feature-1.png"],
+    },
+    {
+      "title": "<Feature/Page Name 2>",
+      "description": "<Short description of this feature>",
+      "imgArr": ["/showcases/<kebab-case-name>-feature-2.png"],
+    }
+  ]
+}

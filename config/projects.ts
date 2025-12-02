@@ -19,6 +19,7 @@ export interface ProjectInterface {
   shortDescription: string;
   websiteLink?: string;
   githubLink?: string;
+  youtubeLink?: string;
   techStack: ValidSkills[];
   startDate: Date;
   endDate: Date;
@@ -29,146 +30,126 @@ export interface ProjectInterface {
 
 export const Projects: ProjectInterface[] = [
   {
-    id: "built-design",
-    companyName: "Builtdesign",
-    type: "Professional",
-    category: ["Web Dev", "Full Stack", "UI/UX"],
-    shortDescription:
-      "Developed and optimized a high-performing website catering to over 4000 users, emphasizing efficiency and maintainability.",
-    websiteLink: "https://builtdesign.in",
-    techStack: [
-      "Next.js",
-      "React",
-      "Node.js",
-      "MongoDB",
-      "GraphQL",
-      "Nest.js",
-      "Typescript",
+    "id": "smart-portfolio-ai",
+    "companyName": "Smart Portfolio AI",
+    "type": "Personal",
+    "category": ["Developer Tools", "Automation", "Generative AI"],
+    "shortDescription": "An intelligent automation tool that leverages Generative AI to transform raw project artifacts into professional technical portfolios, streamlining documentation for developers.",
+    "websiteLink": "#",
+    "techStack": [
+      "Python",
+      "Bash",
+      "Gemini API",
+      "LM Studio",
+      "JSON",
+      "jq"
     ],
-    startDate: new Date("2021-07-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/builtdesign/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Landing Page",
-        description:
-          "Modern and responsive landing page showcasing company services and portfolio",
-        imgArr: [
-          "/projects/builtdesign/landing_1.webp",
-          "/projects/builtdesign/landing_3.webp",
-          "/projects/builtdesign/landing_5.webp",
-          "/projects/builtdesign/landing_6.webp",
-          "/projects/builtdesign/landing_2.webp",
-          "/projects/builtdesign/landing_4.webp",
-        ],
-      },
-      {
-        title: "Custom PDF Reader and optimizer",
-        description:
-          "Specialized PDF viewer with optimization features for improved performance and user experience",
-        imgArr: ["/projects/builtdesign/pdf_opt.webp"],
-      },
-      {
-        title: "Clients Dashboard",
-        description:
-          "Comprehensive client portal with project tracking, document management, and communication tools",
-        imgArr: [
-          "/projects/builtdesign/cli_dashboard_1.webp",
-          "/projects/builtdesign/cli_dashboard_2.webp",
-          "/projects/builtdesign/cli_dashboard_3.webp",
-        ],
-      },
-      {
-        title: "Admin Dashboard",
-        description:
-          "Powerful administrative interface for managing users, projects, and system settings",
-        imgArr: ["/projects/builtdesign/logo.png"],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        "During my time at Builtdesign, I had the opportunity to work on a dynamic and user-focused project that involved designing and optimizing a website catering to a user base of over 4000 individuals. My role as a full-stack web developer was to ensure a seamless experience for users by creating an efficient and maintainable platform.",
-        "I collaborated closely with the product team to integrate cutting-edge features, employing technologies like Next.js and React with TypeScript for captivating front-end experiences. Additionally, I contributed significantly to the backend by utilizing Node.js, MongoDB, and GraphQL to design robust APIs and ensure smooth system functionality.",
-        "This experience allowed me to enhance my skills in various areas of web development and deliver a high-quality product. I gained proficiency in front-end technologies such as Material UI and Tailwind CSS, as well as backend technologies including Nest.js and MySQL. The project's success in catering to a large user base and providing an intuitive user interface has further motivated me to pursue excellence in web development.",
+    "startDate": new Date("2025-11-21"),
+    "endDate": new Date("2025-11-30"),
+    "companyLogoImg": "/showcases/portfolio-1@2x.png",
+    "descriptionDetails": {
+      "paragraphs": [
+        "For software engineers, maintaining an up-to-date portfolio is often a neglected task due to the significant time and effort required for documentation. Smart Portfolio AI solves this problem by automating the creation of technical showcases. It is designed for developers and tech leads who need to present their work professionally without diverting valuable time from coding, effectively bridging the gap between raw code and polished presentation.",
+        "The system utilizes a modular architecture that integrates local file system scanning with powerful Large Language Models (LLMs). By leveraging the Gemini API and local inference via LM Studio, it ensures flexibility and data privacy. The core workflow involves a sophisticated context-splitting mechanism to handle large codebases and a robust error-handling layer. Built with Python for logic and Bash/jq for rapid data orchestration, the tool delivers a seamless, high-performance experience."
       ],
-      bullets: [
-        "Developed and optimized a high-performing website catering to over 4000 users.",
-        "Collaborated closely with the product team to implement cutting-edge features.",
-        "Created an intuitive admin dashboard to efficiently manage and announce contest winners.",
-        "Leveraged Next.js, React with TypeScript for captivating front-end experiences.",
-        "Utilized Node.js, MongoDB, and GraphQL to design and manage databases.",
-      ],
+      "bullets": [
+        "Designed and implemented the core automation bash script, reducing manual documentation time by approximately 80%.",
+        "Integrated dual LLM support (Gemini API and local LM Studio), optimizing for both cost and high-fidelity output.",
+        "Developed a resilient JSON parsing pipeline using jq to ensure strict data structure compliance and error handling."
+      ]
     },
+    "pagesInfoArr": [
+    ]
   },
   {
-    id: "the-super-quotes",
-    companyName: "The Super Quotes",
-    type: "Professional",
-    category: ["Mobile Dev", "Full Stack", "UI/UX"],
-    shortDescription:
-      "Elevated The Super Quotes app with JavaScript, React Native, APIs, Redux magic, and Google Play Store debut.",
-    websiteLink:
-      "https://play.google.com/store/apps/details?id=com.thesuperlife",
-    techStack: ["React Native", "Node.js", "MongoDB", "Javascript"],
-    startDate: new Date("2021-07-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/superquotes/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Quotes View Page",
-        description:
-          "Elegantly designed quotes display with customizable themes and sharing options",
-        imgArr: ["/projects/superquotes/app_2.webp"],
-      },
-      {
-        title: "Quotes Download Component",
-        description:
-          "Feature allowing users to download quotes as beautiful images for social media sharing",
-        imgArr: [
-          "/projects/superquotes/app_4.webp",
-          "/projects/superquotes/app_7.webp",
-        ],
-      },
-      {
-        title: "Account Management",
-        description:
-          "User profile management with favorites, history, and personalization settings",
-        imgArr: ["/projects/superquotes/app_6.webp"],
-      },
-      {
-        title: "Interest Selection and Update Page",
-        description:
-          "Interactive interface for users to select and update their quote preferences and interests",
-        imgArr: [
-          "/projects/superquotes/app_1.webp",
-          "/projects/superquotes/app_3.webp",
-        ],
-      },
-      {
-        title: "Responsiveness",
-        description:
-          "Adaptive design ensuring optimal user experience across various device sizes and orientations",
-        imgArr: ["/projects/superquotes/app_5.webp"],
-      },
+    "id": "golf-detect",
+    "companyName": "Golf Detect",
+    "type": "Professional",
+    "category": ["AI", "SportsTech", "Computer Vision"],
+    "shortDescription": "A cross-platform mobile solution utilizing custom YOLO models to provide real-time automated analytics for golf swings and ball trajectory tracking.",
+    "websiteLink": "#",
+    "techStack": [
+      "YOLO",
+      "Python",
+      "Swift",
+      "iOS",
+      "Android",
+      "Computer Vision",
+      "Edge AI"
     ],
-    descriptionDetails: {
-      paragraphs: [
-        `Venturing into the world of creativity at The Super Quotes was an exhilarating journey. As a passionate developer, I led the charge in crafting a compelling application from inception to completion, using the dynamic duo of JavaScript and React Native.`,
-        `The heart of my achievement lay in the seamless integration of APIs, threading a tapestry of data flow that propelled the application's functionality to new heights.`,
-        `With the wizardry of Redux, I choreographed a symphony of state management and performance optimization, orchestrating a ballet of responsiveness that wowed users with every interaction.`,
-        `A crescendo awaited as I unveiled the culmination of my work on the grand stage of the Google Play Store. The app's debut marked an epoch, opening doors to an expansive audience eager to embrace the charm of The Super Quotes.`,
+    "startDate": new Date("2025-02-01"),
+    "endDate": new Date("2025-05-31"),
+    "companyLogoImg": "/showcases/golf-2@2x.png",
+    "youtubeLink": "https://www.youtube.com/embed/IG5eS9ZTEBQ",
+    "descriptionDetails": {
+      "paragraphs": [
+        "Golf Detect democratizes professional-level sports analytics by offering an automated tool for golfers to analyze their swing mechanics and ball trajectory. Designed for seamless use during training and practice, the application visualizes the complex physics of golf swings, providing users with immediate, actionable feedback to improve their game without the need for expensive, specialized hardware.",
+        "The system architecture is built upon a robust computer vision pipeline featuring a custom-trained YOLO model optimized for edge deployment. By processing video feeds directly on iOS and Android devices, the system ensures data privacy and low-latency performance. The engineering effort focused heavily on model quantization and native integration, allowing for high-precision detection and trajectory rendering in real-time on mobile processors."
       ],
-      bullets: [
-        "Led the end-to-end development of a captivating application using JavaScript and React Native.",
-        "Championed the integration of APIs, harmonizing data flow and enhancing application functionality.",
-        "Conducted Redux magic to ensure state management and optimize performance, delivering a mesmerizing user experience.",
-        "Premiered the application on the Google Play Store, capturing hearts and expanding its user base.",
-      ],
+      "bullets": [
+        "Spearheaded the complete AI development lifecycle, from curating a proprietary dataset to training and fine-tuning YOLO models for high-accuracy ball and club detection.",
+        "Engineered an efficient deployment strategy for mobile platforms, optimizing model size and inference speed to ensure smooth performance on both iOS and Android devices.",
+        "Designed and implemented post-processing algorithms to visualize trajectory effects, bridging raw detection data with intuitive user feedback mechanisms."
+      ]
     },
+    "pagesInfoArr": [
+      {
+        "title": "Swing Analysis Dashboard",
+        "description": "Real-time visualization of swing mechanics with pose estimation overlays, helping users correct form instantly.",
+        "imgArr": ["/showcases/golf-3@2x.png"]
+      },
+      {
+        "title": "Trajectory & Effect Visualization",
+        "description": "Advanced tracking module that renders the ball's flight path and swing effects, providing immediate visual feedback on shot quality.",
+        "imgArr": ["/showcases/golf-4@2x.png"]
+      }
+    ]
   },
   {
-    id: "apex-shopping",
-    companyName: "Apex Shopping App",
+    "id": "ball-tracking",
+    "companyName": "Ball Tracking",
+    "type": "Professional",
+    "category": ["Computer Vision", "AI", "Sports Tech"],
+    "shortDescription": "A real-time cross-platform mobile application for high-speed ball detection and trajectory tracking using optimized YOLO models.",
+    "websiteLink": "#",
+    "techStack": [
+      "YOLO",
+      "Python",
+      "Swift",
+      "iOS",
+      "Android",
+      "Computer Vision"
+    ],
+    "startDate": new Date("2025-02-01"),
+    "endDate": new Date("2025-05-01"),
+    "companyLogoImg": "/showcases/ball-1@2x.png",
+    "descriptionDetails": {
+      "paragraphs": [
+        "This project addresses the challenge of accurately capturing and analyzing high-velocity objects in sports environments without expensive hardware. Designed for coaches and enthusiasts, the application provides real-time visual feedback on ball trajectories, enabling immediate performance analysis and broadcast-quality visualization directly on consumer mobile devices.",
+        "The technical architecture centers on a custom-trained YOLO neural network, fine-tuned for small object detection and rapid inference. The system was architected to bridge Python-based model training with native mobile environments (Swift for iOS, Java/Kotlin for Android), utilizing edge-optimized runtimes to ensure low-latency tracking and smooth rendering of trajectory overlays on live video feeds."
+      ],
+      "bullets": [
+        "Engineered a high-performance Proof of Concept (PoC) utilizing YOLO to detect fast-moving balls with high precision in varying lighting conditions.",
+        "Led the technical strategy and cross-platform development roadmap, successfully securing a client contract based on the PoC's performance.",
+        "Optimized computer vision pipelines for mobile edge deployment, balancing detection accuracy with real-time frame rate requirements."
+      ]
+    },
+    "pagesInfoArr": [
+      {
+        "title": "Real-Time Trajectory View",
+        "description": "Live camera interface overlaying detection bounding boxes and historical path lines on moving balls.",
+        "imgArr": ["/showcases/ball-2@2x.png"]
+      },
+      {
+        "title": "Analysis Dashboard",
+        "description": "Post-capture review screen allowing users to replay tracked shots and view derived metrics.",
+        "imgArr": ["/showcases/ball-3@2x.png"]
+      },
+    ]
+  },
+  {
+    id: "attendance-emotion",
+    companyName: "Attendance with emotion",
     type: "Personal",
     category: ["Mobile Dev", "Full Stack", "UI/UX"],
     shortDescription:
@@ -177,40 +158,8 @@ export const Projects: ProjectInterface[] = [
     techStack: ["React Native", "Javascript", "Redux", "Node.js", "express.js"],
     startDate: new Date("2021-07-14"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/apex/logo.png",
+    companyLogoImg: "/showcases/attendance-1@2x.png",
     pagesInfoArr: [
-      {
-        title: "Splash Screen",
-        description: "Custom animated splash screen with app branding",
-        imgArr: ["/projects/apex/app_7.webp"],
-      },
-      {
-        title: "Login/Signup Authentication",
-        description: "Secure user authentication system with Firebase",
-        imgArr: ["/projects/apex/app_1.webp"],
-      },
-      {
-        title: "All Products Explore Screen",
-        description: "Interactive product browsing with categories and filters",
-        imgArr: ["/projects/apex/app_3.webp"],
-      },
-      {
-        title: "Admin Panel",
-        description:
-          "Comprehensive admin dashboard for product and order management",
-        imgArr: ["/projects/apex/app_4.webp", "/projects/apex/app_6.webp"],
-      },
-      {
-        title: "Sidenav Navigation",
-        description: "Intuitive side navigation for easy app navigation",
-        imgArr: ["/projects/apex/app_5.webp"],
-      },
-      {
-        title: "Firebase Database",
-        description:
-          "Real-time database structure for efficient data management",
-        imgArr: ["/projects/apex/db.webp"],
-      },
     ],
     descriptionDetails: {
       paragraphs: [
@@ -231,8 +180,8 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "builtdesign-blogs",
-    companyName: "Builtdesign Blogs",
+    id: "counting",
+    companyName: "Counting",
     type: "Professional",
     category: ["Web Dev", "Full Stack", "UI/UX"],
     shortDescription:
@@ -241,34 +190,8 @@ export const Projects: ProjectInterface[] = [
     techStack: ["Next.js", "React", "Node.js", "MongoDB", "Typescript"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/builtdesign-blogs/logo.png",
+    companyLogoImg: "/showcases/counting-1@2x.png",
     pagesInfoArr: [
-      {
-        title: "Blog Landing Page",
-        description:
-          "Modern and responsive landing page showcasing featured articles",
-        imgArr: ["/projects/builtdesign-blogs/blog_2.webp"],
-      },
-      {
-        title: "Blog Listing",
-        description:
-          "Organized display of all blog posts with search and filtering",
-        imgArr: ["/projects/builtdesign-blogs/blog_3.webp"],
-      },
-      {
-        title: "Category Navigation",
-        description: "Intuitive category-based navigation system",
-        imgArr: ["/projects/builtdesign-blogs/blog_1.webp"],
-      },
-      {
-        title: "Article View",
-        description:
-          "Clean and readable article layout with rich media support",
-        imgArr: [
-          "/projects/builtdesign-blogs/blog_4.webp",
-          "/projects/builtdesign-blogs/blog_5.webp",
-        ],
-      },
     ],
     descriptionDetails: {
       paragraphs: [
@@ -289,8 +212,8 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "portfolio-card",
-    companyName: "Portfolio Card",
+    id: "gesture-controller",
+    companyName: "Gesture Controller Signage",
     type: "Personal",
     category: ["Web Dev", "Frontend", "3D Modeling"],
     shortDescription:
@@ -300,24 +223,8 @@ export const Projects: ProjectInterface[] = [
     techStack: ["React", "Javascript", "HTML 5", "CSS 3"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/card/logo.png",
+    companyLogoImg: "/showcases/gesture-1@2x.png",
     pagesInfoArr: [
-      {
-        title: "Card Views",
-        description: "Front and back views of the interactive 3D card",
-        imgArr: ["/projects/card/card_2.webp", "/projects/card/card_3.webp"],
-      },
-      {
-        title: "Interactive Elements",
-        description:
-          "Custom links embedded in the 3D model with interactive animations",
-        imgArr: ["/projects/card/card_1.webp"],
-      },
-      {
-        title: "3D Model Development",
-        description: "Blender project showcasing the model creation process",
-        imgArr: ["/projects/card/card_4.webp"],
-      },
     ],
     descriptionDetails: {
       paragraphs: [
@@ -340,8 +247,8 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "cirql-dashboard",
-    companyName: "Cirql Dashboard",
+    id: "eye-tracking",
+    companyName: "Eye Tracking",
     type: "Personal",
     category: ["Web Dev", "Frontend", "UI/UX"],
     shortDescription:
@@ -350,20 +257,8 @@ export const Projects: ProjectInterface[] = [
     techStack: ["React", "Tailwind CSS", "Google Auth"],
     startDate: new Date("2023-01-01"),
     endDate: new Date("2023-02-15"),
-    companyLogoImg: "/projects/cirql/logo.png",
+    companyLogoImg: "/showcases/eye-track-1@2x.png",
     pagesInfoArr: [
-      {
-        title: "Dashboard Home",
-        description:
-          "Main dashboard view with analytics widgets and data visualization",
-        imgArr: ["/projects/cirql/web_1.png", "/projects/cirql/web_2.png"],
-      },
-      {
-        title: "Profile Page",
-        description:
-          "User profile management interface with customization options",
-        imgArr: ["/projects/cirql/web_3.png", "/projects/cirql/web_4.png"],
-      },
     ],
     descriptionDetails: {
       paragraphs: [
@@ -383,8 +278,8 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "inscript-hindi-typing",
-    companyName: "Inscript Hindi Typing",
+    id: "inspection-factory",
+    companyName: "Inspection Factory",
     type: "Personal",
     category: ["Web Dev", "UI/UX"],
     shortDescription:
@@ -394,22 +289,44 @@ export const Projects: ProjectInterface[] = [
     techStack: ["HTML 5", "CSS 3", "Javascript"],
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
-    companyLogoImg: "/projects/hindi-keyboard/logo.png",
+    companyLogoImg: "/showcases/inspection-1@2x.png",
     pagesInfoArr: [
-      {
-        title: "Typing Interface",
-        description: "Minimal and user-friendly Inscript Hindi typing area",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-      {
-        title: "Copy and Download the file",
-        description:
-          "Export functionality allowing users to copy text or download as a document file",
-        imgArr: [
-          "/projects/hindi-keyboard/web_2.png",
-          "/projects/hindi-keyboard/web_3.png",
-        ],
-      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "The 'Inscript Hindi Typing Website' project emerged from the need to provide a simple and accessible tool for Hindi writers, especially those in digital news and media, who wished to convey data in Hindi.",
+        "Recognizing the challenges posed by complex software in the market, I set out to create a minimalistic typing area that catered to the needs of a vast community of Hindi typists in India.",
+        "The project was designed to address the specific requirements of users familiar with the Inscript keyboard layout, mapping English and Hindi alphabets for seamless typing. The intuitive interface allowed users to effortlessly switch between languages, streamlining the process of content creation.",
+        "Leveraging HTML and CSS, I crafted the website's UI to ensure a user-friendly experience. Additionally, Local Storage was utilized to enable users to save and retrieve their work, enhancing convenience and productivity.",
+        "The website's focus on user experience and simplicity proved to be a key factor in its popularity among Hindi writers. By offering a tool that reduced the barriers to entry, I contributed to the digital empowerment of Hindi typists who previously faced challenges in conveying their message effectively.",
+        "This project marked one of my initial forays into web development and highlighted the transformative potential of technology in addressing real-world challenges.",
+      ],
+      bullets: [
+        "Developed a user-friendly website for Inscript Hindi typing.",
+        "Catered to the needs of Hindi writers in digital news and media.",
+        "Created a minimalistic and intuitive typing interface for the Inscript keyboard layout.",
+        "Mapped English and Hindi alphabets to provide a seamless typing experience.",
+        "Utilized HTML and CSS to design a user-friendly UI.",
+        "Implemented Local Storage to enable users to save and retrieve their work.",
+        "Contributed to the digital empowerment of Hindi typists by offering a simple tool.",
+        "Marked one of my first web development projects, showcasing technology's potential for addressing real-world needs.",
+      ],
+    },
+  },
+  {
+    id: "automated-structural-design",
+    companyName: "Automated Structural Design",
+    type: "Personal",
+    category: ["Web Dev", "UI/UX"],
+    shortDescription:
+      "Developed a user-friendly website for Inscript Hindi typing, addressing the need for a simple tool for Hindi writers to convey data digitally.",
+    websiteLink: "https://hindityping.namanbarkiya.xyz",
+    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
+    techStack: ["HTML 5", "CSS 3", "Javascript"],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/showcases/structural-2@2x.png",
+    pagesInfoArr: [
     ],
     descriptionDetails: {
       paragraphs: [

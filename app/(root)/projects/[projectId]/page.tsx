@@ -18,13 +18,41 @@ interface ProjectPageProps {
   };
 }
 
-const githubUsername = "namanbarkiya";
+const githubUsername = "chnghia";
+
+const getYouTubeEmbedUrl = (url: string) => {
+  try {
+    const parsedUrl = new URL(url);
+
+    if (parsedUrl.hostname.includes("youtu.be")) {
+      return `https://www.youtube.com/embed/${parsedUrl.pathname.slice(1)}`;
+    }
+
+    if (parsedUrl.hostname.includes("youtube.com")) {
+      const videoId = parsedUrl.searchParams.get("v");
+      if (videoId) return `https://www.youtube.com/embed/${videoId}`;
+
+      const pathParts = parsedUrl.pathname.split("/").filter(Boolean);
+      if (pathParts[0] === "embed" && pathParts[1]) {
+        return `https://www.youtube.com/embed/${pathParts[1]}`;
+      }
+    }
+
+    return null;
+  } catch (error) {
+    return null;
+  }
+};
 
 export default function Project({ params }: ProjectPageProps) {
   let project = Projects.find((val) => val.id === params.projectId);
   if (!project) {
     redirect("/projects");
   }
+
+  const youtubeEmbedUrl = project.youtubeLink
+    ? getYouTubeEmbedUrl(project.youtubeLink)
+    : null;
 
   return (
     <article className="container relative max-w-3xl py-6 lg:py-10">
@@ -114,6 +142,26 @@ export default function Project({ params }: ProjectPageProps) {
           bullets={project.descriptionDetails.bullets}
         />
       </div>
+
+      {youtubeEmbedUrl && (
+        <div className="my-8">
+          <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-3">
+            Video
+          </h2>
+          <div
+            className="relative w-full overflow-hidden rounded-md border bg-muted"
+            style={{ aspectRatio: "16 / 9" }}
+          >
+            <iframe
+              src={youtubeEmbedUrl}
+              title={`${project.companyName} demo video`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full"
+            />
+          </div>
+        </div>
+      )}
 
       <div className="mb-7 ">
         {project.pagesInfoArr.length > 0 && (

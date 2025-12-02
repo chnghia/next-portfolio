@@ -161,6 +161,8 @@ class ProjectEditor:
 
     def display_media(self, file_path):
         self.stop_video_preview()
+        # Best-effort thumbnail generation for current item (saved under selected folder/thumbnails)
+        self.create_thumbnail(file_path)
         try:
             if file_path.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
                 img = Image.open(file_path)
@@ -470,6 +472,55 @@ class ProjectEditor:
                 text = text.split('\n', 1)[1] if '\n' in text else text
             return json.loads(text)
         except Exception:
+            return None
+
+    # --- Thumbnails ---
+    def create_thumbnail(self, file_path, max_size=None):
+        """
+        Save a JPEG thumbnail for the given media into <selected folder>/thumbnails/<stem>.jpg.
+        By default it keeps the largest possible resolution from the source (no downscale).
+        Does nothing if the thumbnail already exists or the media cannot be read.
+        """
+        if not self.folder_path:
+            return None
+
+        thumb_dir = os.path.join(self.folder_path, "thumbnails")
+        os.makedirs(thumb_dir, exist_ok=True)
+
+        stem = os.path.splitext(os.path.basename(file_path))[0]
+        thumb_path = os.path.join(thumb_dir, f"{stem}.jpg")
+
+        if os.path.exists(thumb_path):
+            return thumb_path
+
+        ext = os.path.splitext(file_path)[1].lower()
+        try:
+            if ext in ('.png', '.jpg', '.jpeg'):
+                img = Image.open(file_path).convert("RGB")
+            elif ext == '.gif':
+                img = Image.open(file_path)
+                img.seek(0)
+                img = img.convert("RGB")
+            elif ext in ('.mp4', '.mov', '.avi'):
+                cap = cv2.VideoCapture(file_path)
+                if not cap.isOpened():
+                    return None
+                ret, frame = cap.read()
+                cap.release()
+                if not ret:
+                    return None
+                frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                img = Image.fromarray(frame)
+            else:
+                return None
+
+            # Only downscale if caller provides an explicit max_size; otherwise keep full resolution
+            if max_size:
+                img.thumbnail(max_size)
+            img.save(thumb_path, "JPEG", quality=85)
+            return thumb_path
+        except Exception:
+            # Silent failure is acceptable; UI still works without a thumbnail file.
             return None
 
     def refresh_file_listbox(self):

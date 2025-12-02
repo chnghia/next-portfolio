@@ -26,7 +26,7 @@ export const pagesConfig: PagesConfig = {
     description: "Showcasing impactful projects and technical achievements.",
     metadata: {
       title: "Projects",
-      description: "Naman Barkiya's projects in building web applications.",
+      description: "Projects showcase",
     },
   },
   contact: {
@@ -34,7 +34,7 @@ export const pagesConfig: PagesConfig = {
     description: "Let's connect and explore collaborations.",
     metadata: {
       title: "Contact",
-      description: "Contact Naman Barkiya.",
+      description: "Contact Nghia Chung.",
     },
   },
 };
