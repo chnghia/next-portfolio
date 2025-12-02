@@ -1,13 +1,15 @@
-const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? "/next-portfolio" : "";
+// Chỉ thêm basePath/assetPrefix khi build cho GitHub Pages.
+// Dùng biến riêng để tránh ảnh hưởng tới build prod cục bộ.
+const enableGhPages = process.env.ENABLE_GH_PAGES === "true";
+const basePath = enableGhPages ? "/next-portfolio" : "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Giữ cấu hình build ra thư mục riêng cho GitHub Pages / static hosting
   distDir: "dist",
 
-  // Base path/asset prefix chỉ áp dụng khi build production (deploy GitHub Pages)
-  ...(isProd
+  // Base path/asset prefix chỉ áp dụng khi build deploy GitHub Pages
+  ...(enableGhPages
     ? {
         output: "export",
         basePath,

@@ -5,6 +5,7 @@ import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
 import { ProjectInterface } from "@/config/projects";
+import { withBasePath } from "@/lib/utils";
 
 interface ProjectCardProps {
   project: ProjectInterface;
@@ -16,7 +17,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <div className="relative w-full h-[200px]">
         <Image
           className="rounded-lg border border-border object-cover"
-          src={project.companyLogoImg}
+          src={withBasePath(project.companyLogoImg)}
           alt="img"
           fill
         />

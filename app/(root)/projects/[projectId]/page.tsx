@@ -9,7 +9,7 @@ import ChipContainer from "@/components/ui/chip-container";
 import CustomTooltip from "@/components/ui/custom-tooltip";
 import { Projects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
-import { cn, formatDateFromObj } from "@/lib/utils";
+import { cn, formatDateFromObj, withBasePath } from "@/lib/utils";
 import profileImg from "@/public/profile-img.png";
 
 interface ProjectPageProps {
@@ -127,7 +127,7 @@ export default function Project({ params }: ProjectPageProps) {
       </div>
 
       <Image
-        src={project.companyLogoImg}
+        src={withBasePath(project.companyLogoImg)}
         alt={project.companyName}
         width={720}
         height={405}
@@ -188,7 +188,7 @@ export default function Project({ params }: ProjectPageProps) {
               <p>{page.description}</p>
               {page.imgArr.map((img, ind) => (
                 <Image
-                  src={img}
+                  src={withBasePath(img)}
                   key={ind}
                   alt={img}
                   width={720}
