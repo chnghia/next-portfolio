@@ -37,4 +37,13 @@ export const pagesConfig: PagesConfig = {
       description: "Contact Nghia Chung.",
     },
   },
+  blog: {
+    title: "Blog",
+    description:
+      "Tổng hợp ghi chép cá nhân về kỹ thuật, kiến trúc và quy trình làm việc.",
+    metadata: {
+      title: "Blog",
+      description: "Những bài viết ngắn gọn, thực tế từ kinh nghiệm làm việc.",
+    },
+  },
 };

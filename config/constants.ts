@@ -96,4 +96,5 @@ export type ValidExpType = "Personal" | "Professional";
 export type ValidPages =
   | "home"
   | "projects"
-  | "contact";
+  | "contact"
+  | "blog";
