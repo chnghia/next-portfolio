@@ -22,8 +22,8 @@ import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img.png";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title} | Modern Next.js Developer Portfolio Template`,
-  description: `${pagesConfig.home.metadata.description} This open-source Next.js portfolio template is customizable to showcase your skills and projects.`,
+  title: `${pagesConfig.home.metadata.title}`,
+  description: `${pagesConfig.home.metadata.description}`,
   alternates: {
     canonical: siteConfig.url,
   },

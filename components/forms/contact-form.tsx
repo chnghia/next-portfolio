@@ -44,30 +44,36 @@ export function ContactForm() {
     },
   });
 
-  // 2. Define a submit handler.
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
+  // Build a mailto link and hand off to the user's mail client instead of hitting the API.
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    const { name, email, message, social } = values;
 
-      form.reset();
+    const subject = `Contact from ${name}`;
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      social ? `Social: ${social}` : null,
+      "",
+      message,
+    ]
+      .filter(Boolean)
+      .join("\n");
 
-      if (response.status === 200) {
-        storeModal.onOpen({
-          title: "Thankyou!",
-          description:
-            "Your message has been received! I appreciate your contact and will get back to you shortly.",
-          icon: Icons.successAnimated,
-        });
-      }
-    } catch (err) {
-      console.log("Err!", err);
-    }
+    const mailtoLink = `mailto:chnghia@gmail.com?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Use _self so most browsers invoke the default mail client immediately.
+    window.open(mailtoLink, "_self");
+
+    storeModal.onOpen({
+      title: "Mail client opened",
+      description:
+        "If nothing happens, please send your message directly to chnghia@gmail.com.",
+      icon: Icons.successAnimated,
+    });
+
+    form.reset();
   }
 
   return (
