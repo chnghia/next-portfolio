@@ -46,7 +46,7 @@ export const Projects: ProjectInterface[] = [
     ],
     "startDate": new Date("2025-11-21"),
     "endDate": new Date("2025-11-30"),
-    "companyLogoImg": "/showcases/portfolio-1@2x.png",
+    "companyLogoImg": "/next-portfolio/showcases/portfolio-1@2x.png",
     "descriptionDetails": {
       "paragraphs": [
         "For software engineers, maintaining an up-to-date portfolio is often a neglected task due to the significant time and effort required for documentation. Smart Portfolio AI solves this problem by automating the creation of technical showcases. It is designed for developers and tech leads who need to present their work professionally without diverting valuable time from coding, effectively bridging the gap between raw code and polished presentation.",
@@ -79,7 +79,7 @@ export const Projects: ProjectInterface[] = [
     ],
     "startDate": new Date("2025-02-01"),
     "endDate": new Date("2025-05-31"),
-    "companyLogoImg": "/showcases/golf-2@2x.png",
+    "companyLogoImg": "/next-portfolio/showcases/golf-2@2x.png",
     "youtubeLink": "https://www.youtube.com/embed/IG5eS9ZTEBQ",
     "descriptionDetails": {
       "paragraphs": [
@@ -96,12 +96,12 @@ export const Projects: ProjectInterface[] = [
       {
         "title": "Swing Analysis Dashboard",
         "description": "Real-time visualization of swing mechanics with pose estimation overlays, helping users correct form instantly.",
-        "imgArr": ["/showcases/golf-3@2x.png"]
+        "imgArr": ["/next-portfolio/showcases/golf-3@2x.png"]
       },
       {
         "title": "Trajectory & Effect Visualization",
         "description": "Advanced tracking module that renders the ball's flight path and swing effects, providing immediate visual feedback on shot quality.",
-        "imgArr": ["/showcases/golf-4@2x.png"]
+        "imgArr": ["/next-portfolio/showcases/golf-4@2x.png"]
       }
     ]
   },
@@ -122,7 +122,7 @@ export const Projects: ProjectInterface[] = [
     ],
     "startDate": new Date("2025-02-01"),
     "endDate": new Date("2025-05-01"),
-    "companyLogoImg": "/showcases/ball-1@2x.png",
+    "companyLogoImg": "/next-portfolio/showcases/ball-1@2x.png",
     "descriptionDetails": {
       "paragraphs": [
         "This project addresses the challenge of accurately capturing and analyzing high-velocity objects in sports environments without expensive hardware. Designed for coaches and enthusiasts, the application provides real-time visual feedback on ball trajectories, enabling immediate performance analysis and broadcast-quality visualization directly on consumer mobile devices.",
@@ -138,12 +138,12 @@ export const Projects: ProjectInterface[] = [
       {
         "title": "Real-Time Trajectory View",
         "description": "Live camera interface overlaying detection bounding boxes and historical path lines on moving balls.",
-        "imgArr": ["/showcases/ball-2@2x.png"]
+        "imgArr": ["/next-portfolio/showcases/ball-2@2x.png"]
       },
       {
         "title": "Analysis Dashboard",
         "description": "Post-capture review screen allowing users to replay tracked shots and view derived metrics.",
-        "imgArr": ["/showcases/ball-3@2x.png"]
+        "imgArr": ["/next-portfolio/showcases/ball-3@2x.png"]
       },
     ]
   },
@@ -154,11 +154,11 @@ export const Projects: ProjectInterface[] = [
     category: ["Mobile Dev", "Full Stack", "UI/UX"],
     shortDescription:
       "Developed a feature-rich mobile shopping application with admin panel, user authentication, and seamless product management using React Native and Firebase.",
-    githubLink: "https://github.com/namanbarkiya/apex-shopping-app",
+    // githubLink: "https://github.com/namanbarkiya/apex-shopping-app",
     techStack: ["React Native", "Javascript", "Redux", "Node.js", "express.js"],
     startDate: new Date("2021-07-14"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/showcases/attendance-1@2x.png",
+    companyLogoImg: "/next-portfolio/showcases/attendance-1@2x.png",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -186,11 +186,11 @@ export const Projects: ProjectInterface[] = [
     category: ["Web Dev", "Full Stack", "UI/UX"],
     shortDescription:
       "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
-    websiteLink: "https://blog.builtdesign.in",
+    // websiteLink: "https://blog.builtdesign.in",
     techStack: ["Next.js", "React", "Node.js", "MongoDB", "Typescript"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/showcases/counting-1@2x.png",
+    companyLogoImg: "/next-portfolio/showcases/counting-1@2x.png",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -218,12 +218,12 @@ export const Projects: ProjectInterface[] = [
     category: ["Web Dev", "Frontend", "3D Modeling"],
     shortDescription:
       "Forged an immersive 3D Portfolio Card utilizing the prowess of Three.js and Blender, where art and technology converge in an interactive masterpiece.",
-    websiteLink: "https://card.namanbarkiya.xyz/",
-    githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
+    // websiteLink: "https://card.namanbarkiya.xyz/",
+    // githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
     techStack: ["React", "Javascript", "HTML 5", "CSS 3"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/showcases/gesture-1@2x.png",
+    companyLogoImg: "/next-portfolio/showcases/gesture-1@2x.png",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -253,11 +253,11 @@ export const Projects: ProjectInterface[] = [
     category: ["Web Dev", "Frontend", "UI/UX"],
     shortDescription:
       "Created a dashboard project using React and Tailwind CSS, focusing on UI design and routing implementation.",
-    websiteLink: "https://cirql-ui.namanbarkiya.xyz/",
+    // websiteLink: "https://cirql-ui.namanbarkiya.xyz/",
     techStack: ["React", "Tailwind CSS", "Google Auth"],
     startDate: new Date("2023-01-01"),
     endDate: new Date("2023-02-15"),
-    companyLogoImg: "/showcases/eye-track-1@2x.png",
+    companyLogoImg: "/next-portfolio/showcases/eye-track-1@2x.png",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -284,12 +284,12 @@ export const Projects: ProjectInterface[] = [
     category: ["Web Dev", "UI/UX"],
     shortDescription:
       "Developed a user-friendly website for Inscript Hindi typing, addressing the need for a simple tool for Hindi writers to convey data digitally.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
+    // websiteLink: "https://hindityping.namanbarkiya.xyz",
+    // githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["HTML 5", "CSS 3", "Javascript"],
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
-    companyLogoImg: "/showcases/inspection-1@2x.png",
+    companyLogoImg: "/next-portfolio/showcases/inspection-1@2x.png",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -320,12 +320,12 @@ export const Projects: ProjectInterface[] = [
     category: ["Web Dev", "UI/UX"],
     shortDescription:
       "Developed a user-friendly website for Inscript Hindi typing, addressing the need for a simple tool for Hindi writers to convey data digitally.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
+    // websiteLink: "https://hindityping.namanbarkiya.xyz",
+    // githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["HTML 5", "CSS 3", "Javascript"],
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
-    companyLogoImg: "/showcases/structural-2@2x.png",
+    companyLogoImg: "/next-portfolio/showcases/structural-2@2x.png",
     pagesInfoArr: [
     ],
     descriptionDetails: {
