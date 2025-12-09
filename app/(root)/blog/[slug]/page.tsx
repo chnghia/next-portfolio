@@ -19,6 +19,11 @@ interface BlogPostPageProps {
 
 export async function generateStaticParams() {
   const slugs = getAllPostSlugs();
+  console.log(slugs);
+  if (!slugs || slugs.length === 0) {
+    console.log("No posts found");
+    return [{ slug: "" }];
+  }
   return slugs.map((slug) => ({ slug }));
 }
 

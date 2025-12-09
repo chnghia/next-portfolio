@@ -73,7 +73,21 @@ export type ValidSkills =
   | "iOS"
   | "Android"
   | "Computer Vision"
-  | "Edge AI";
+  | "Edge AI"
+  | "Mediapipe"
+  | "OpenCV"
+  | "ResNet"
+  | "Machine Learning"
+  | "Windows"
+  | "MobileNet"
+  | "Ruby"
+  | "Rails"
+  | "PostgreSQL"
+  | "IoT"
+  | "Flutter"
+  | "Backend"
+  | "Frontend"
+  | "Full Stack";
 
 export type ValidCategory =
   | "Full Stack"
@@ -89,7 +103,19 @@ export type ValidCategory =
   | "AI"
   | "SportsTech"
   | "Sports Tech"
-  | "Computer Vision";
+  | "Computer Vision"
+  | "Mobile"
+  | "SaaS"
+  | "Logistics"
+  | "Edge Computing"
+  | "3D Rendering"
+  | "Manufacturing"
+  | "ConstructionTech"
+  | "Real Estate"
+  | "Marketplace"
+  | "Surveillance"
+  | "IoT"
+  | "Wildlife Monitoring";
 
 export type ValidExpType = "Personal" | "Professional";
 
