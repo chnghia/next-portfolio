@@ -123,6 +123,7 @@ export const Projects: ProjectInterface[] = [
     "startDate": new Date("2025-02-01"),
     "endDate": new Date("2025-05-01"),
     "companyLogoImg": "/showcases/ball-1@2x.png",
+    "youtubeLink": "https://www.youtube.com/embed/Nqo4J3zkzq8",
     "descriptionDetails": {
       "paragraphs": [
         "This project addresses the challenge of accurately capturing and analyzing high-velocity objects in sports environments without expensive hardware. Designed for coaches and enthusiasts, the application provides real-time visual feedback on ball trajectories, enabling immediate performance analysis and broadcast-quality visualization directly on consumer mobile devices.",
@@ -149,45 +150,34 @@ export const Projects: ProjectInterface[] = [
   },
   {
     id: "attendance-emotion",
-    companyName: "Attendance with emotion",
-    type: "Personal",
-    category: ["Mobile Dev", "Full Stack", "UI/UX"],
+    companyName: "Attendance Emotion System",
+    type: "Professional",
+    category: ["AI", "Mobile", "SaaS"],
     shortDescription:
-      "Developed a feature-rich mobile shopping application with admin panel, user authentication, and seamless product management using React Native and Firebase.",
+      "Hệ thống chấm công thông minh sử dụng AI để nhận diện khuôn mặt, phân tích cảm xúc và cung cấp báo cáo thời gian thực trên iOS/Android.",
     // githubLink: "https://github.com/namanbarkiya/apex-shopping-app",
-    techStack: ["React Native", "Javascript", "Redux", "Node.js", "express.js"],
+    techStack: ["Python", "Swift", "iOS", "Android"],
     startDate: new Date("2021-07-14"),
     endDate: new Date("2022-07-01"),
     companyLogoImg: "/showcases/attendance-1@2x.png",
+    "youtubeLink": "https://www.youtube.com/embed/HaCVekv5wCo",
     pagesInfoArr: [
     ],
     descriptionDetails: {
       paragraphs: [
-        "The Apex Shopping App represents a comprehensive mobile e-commerce solution that I developed from the ground up using React Native and Firebase. This project showcases my ability to create a full-featured shopping application with both user and admin functionalities.",
-        "The application features a robust authentication system, allowing users to securely sign up and log in. The product exploration interface is designed with user experience in mind, incorporating smooth navigation and intuitive filtering options.",
-        "One of the key highlights is the admin panel, which provides complete control over product management, order processing, and inventory tracking. The integration with Firebase ensures real-time data synchronization and reliable data persistence.",
-        "The app's architecture emphasizes scalability and performance, utilizing Redux for state management and following best practices for mobile app development. The UI/UX design focuses on providing a seamless shopping experience across different device sizes.",
       ],
       bullets: [
-        "Implemented secure user authentication and authorization using Firebase",
-        "Designed and developed an intuitive product browsing and shopping cart system",
-        "Created a comprehensive admin panel for product and order management",
-        "Integrated real-time data synchronization using Firebase Database",
-        "Implemented state management using Redux for optimal performance",
-        "Designed responsive UI components following mobile-first principles",
-        "Incorporated smooth animations and transitions for enhanced user experience",
       ],
     },
   },
   {
     id: "counting",
-    companyName: "Counting",
+    companyName: "Rice Bag Counting",
     type: "Professional",
-    category: ["Web Dev", "Full Stack", "UI/UX"],
-    shortDescription:
-      "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
+    category: ["AI", "Computer Vision", "Logistics"],
+    shortDescription: "Hệ thống đếm bao gạo thời gian thực sử dụng AI giúp tối ưu quản lý tồn kho.",
     // websiteLink: "https://blog.builtdesign.in",
-    techStack: ["Next.js", "React", "Node.js", "MongoDB", "Typescript"],
+    techStack: ["Python", "YOLO"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
     companyLogoImg: "/showcases/counting-1@2x.png",
@@ -195,19 +185,8 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "As part of the Builtdesign platform, I developed a sophisticated blog website that serves as a content hub for the company's thought leadership and industry insights. The project leveraged Next.js and React to create a fast, SEO-friendly platform.",
-        "The blog platform features a modern, responsive design that prioritizes readability and user engagement. I implemented a robust content management system using Netlify CMS, enabling the content team to easily publish and manage blog posts.",
-        "The architecture includes server-side rendering for optimal performance and SEO, while MongoDB provides flexible content storage. TypeScript ensures code reliability and maintainability throughout the application.",
-        "Key features include category-based navigation, search functionality, and a rich text editor for content creation. The platform supports various content types including images, code snippets, and embedded media.",
       ],
       bullets: [
-        "Developed a modern blog platform using Next.js and React with TypeScript",
-        "Implemented Netlify CMS for efficient content management",
-        "Created a responsive design that prioritizes readability and user engagement",
-        "Built server-side rendering for optimal performance and SEO",
-        "Integrated MongoDB for flexible content storage and management",
-        "Developed category-based navigation and search functionality",
-        "Implemented rich text editing capabilities for content creation",
       ],
     },
   },
@@ -215,12 +194,12 @@ export const Projects: ProjectInterface[] = [
     id: "gesture-controller",
     companyName: "Gesture Controller Signage",
     type: "Personal",
-    category: ["Web Dev", "Frontend", "3D Modeling"],
+    category: ["AI", "Edge Computing", "Computer Vision"],
     shortDescription:
-      "Forged an immersive 3D Portfolio Card utilizing the prowess of Three.js and Blender, where art and technology converge in an interactive masterpiece.",
+      "Hệ thống điều khiển bằng cử chỉ sử dụng Edge AI, Mediapipe để mang lại trải nghiệm không chạm cho các thiết bị hiển thị.",
     // websiteLink: "https://card.namanbarkiya.xyz/",
     // githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
-    techStack: ["React", "Javascript", "HTML 5", "CSS 3"],
+    techStack: ["Python", "Edge AI", "Mediapipe", "YOLO", "OpenCV"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
     companyLogoImg: "/showcases/gesture-1@2x.png",
@@ -228,33 +207,20 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "In my personal, I've ventured into the world of creativity, fashioning a distinctive portfolio card through the utilization of Three.js.",
-        "This portfolio card transcends convention; it emerges as a captivating 3D model, adorned with meticulous lighting arrangements that conjure a spellbinding visual journey.",
-        "To materialize this concept, I've harnessed the combined potential of Three.js and Blender, orchestrating a meticulous crafting of the central 3D model that serves as the cornerstone of the card's allure.",
-        "Yet, the allure extends beyond aesthetics. I've ingeniously interwoven custom links directly into the fabric of Three.js components. Through the creation and seamless integration of novel components, these additions elegantly rest upon the card's surface, mirroring its rotations and delivering an interactive dimension to my portfolio.",
-        "The portfolio card itself is an opus of motion, perpetually swaying in an auto-rotational dance that unfurls its multifaceted essence. As an enhancement, I've introduced an instinctive user interaction element. A simple, intuitive drag of the card in specific directions grants viewers a comprehensive vantage, enabling exploration from every conceivable angle.",
-        "At its core, my personal epitomizes technical finesse, artistic expression, and interactive design. The amalgamation of Three.js, Blender's prowess, and the innovation of component integration has birthed not only a portfolio card, but a dynamic encounter leaving an indelible imprint on all who partake.",
       ],
       bullets: [
-        "Conceptualized and realized a distinct portfolio card using Three.js, highlighting creative exploration.",
-        "Crafted a mesmerizing 3D model enhanced by thoughtful lighting arrangements, resulting in a captivating visual voyage.",
-        "Leveraged the synergy of Three.js and Blender to meticulously sculpt and refine the central 3D model, embodying meticulous attention to detail.",
-        "Innovatively integrated custom links within Three.js components, introducing an interactive layer via seamlessly incorporated new elements.",
-        "Enabled an auto-rotating feature for the portfolio card, perpetually showcasing its various facets to observers.",
-        "Introduced an instinctual user interaction mechanism, allowing viewers to comprehensively explore the card's dimensions through simple, intuitive dragging motions.",
-        "Represented a fusion of technical prowess, artistic ingenuity, and interactive design in a project that reshapes the boundaries of conventional portfolio representation.",
       ],
     },
   },
   {
     id: "eye-tracking",
-    companyName: "Eye Tracking",
-    type: "Personal",
-    category: ["Web Dev", "Frontend", "UI/UX"],
+    companyName: "Eye Tracking Model",
+    type: "Professional",
+    category: ["AI", "Computer Vision", "3D Rendering"],
     shortDescription:
-      "Created a dashboard project using React and Tailwind CSS, focusing on UI design and routing implementation.",
+      "Model theo dõi mắt bằng AI, tích hợp vào engine 3D để tạo trải nghiệm người dùng thời gian thực.",
     // websiteLink: "https://cirql-ui.namanbarkiya.xyz/",
-    techStack: ["React", "Tailwind CSS", "Google Auth"],
+    techStack: ["Python"],
     startDate: new Date("2023-01-01"),
     endDate: new Date("2023-02-15"),
     companyLogoImg: "/showcases/eye-track-1@2x.png",
@@ -262,31 +228,20 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "For the 'Cirql Dashboard' personal, I aimed to enhance my UI design skills and deepen my understanding of routing within a React application.",
-        "I utilized React and Tailwind CSS to craft an intuitive dashboard interface that provides users with an organized overview of data and functionalities. The UI components were thoughtfully designed to ensure a seamless user experience.",
-        "Incorporating Google Sign-In Authentication further fortified the project by adding a layer of security and convenience. Users are required to authenticate before accessing certain routes, ensuring the safety of sensitive information.",
-        "The routing system was meticulously implemented to enable smooth navigation between different sections of the dashboard, simulating real-world use cases.",
-        "Through this project, I've gained valuable insights into UI/UX design principles and the implementation of secure and efficient routing in React applications.",
       ],
       bullets: [
-        "Created a user-friendly dashboard project using React and Tailwind CSS.",
-        "Implemented Google Sign-In Authentication to ensure secure access to sensitive routes.",
-        "Designed UI components to provide an intuitive and visually pleasing experience.",
-        "Focused on implementing a smooth routing system to simulate real-world use cases.",
-        "Enhanced my skills in UI design, routing, and component architecture.",
       ],
     },
   },
   {
     id: "inspection-factory",
     companyName: "Inspection Factory",
-    type: "Personal",
-    category: ["Web Dev", "UI/UX"],
-    shortDescription:
-      "Developed a user-friendly website for Inscript Hindi typing, addressing the need for a simple tool for Hindi writers to convey data digitally.",
+    type: "Professional",
+    category: ["AI", "Manufacturing", "Computer Vision"],
+    shortDescription: "Tự động phát hiện lỗi sản phẩm trong dây chuyền bằng mô hình Deep Learning trên đa nền tảng.",
     // websiteLink: "https://hindityping.namanbarkiya.xyz",
     // githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
-    techStack: ["HTML 5", "CSS 3", "Javascript"],
+    techStack: ["Python", "ResNet", "Machine Learning", "Windows"],
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
     companyLogoImg: "/showcases/inspection-1@2x.png",
@@ -294,32 +249,18 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "The 'Inscript Hindi Typing Website' project emerged from the need to provide a simple and accessible tool for Hindi writers, especially those in digital news and media, who wished to convey data in Hindi.",
-        "Recognizing the challenges posed by complex software in the market, I set out to create a minimalistic typing area that catered to the needs of a vast community of Hindi typists in India.",
-        "The project was designed to address the specific requirements of users familiar with the Inscript keyboard layout, mapping English and Hindi alphabets for seamless typing. The intuitive interface allowed users to effortlessly switch between languages, streamlining the process of content creation.",
-        "Leveraging HTML and CSS, I crafted the website's UI to ensure a user-friendly experience. Additionally, Local Storage was utilized to enable users to save and retrieve their work, enhancing convenience and productivity.",
-        "The website's focus on user experience and simplicity proved to be a key factor in its popularity among Hindi writers. By offering a tool that reduced the barriers to entry, I contributed to the digital empowerment of Hindi typists who previously faced challenges in conveying their message effectively.",
-        "This project marked one of my initial forays into web development and highlighted the transformative potential of technology in addressing real-world challenges.",
       ],
       bullets: [
-        "Developed a user-friendly website for Inscript Hindi typing.",
-        "Catered to the needs of Hindi writers in digital news and media.",
-        "Created a minimalistic and intuitive typing interface for the Inscript keyboard layout.",
-        "Mapped English and Hindi alphabets to provide a seamless typing experience.",
-        "Utilized HTML and CSS to design a user-friendly UI.",
-        "Implemented Local Storage to enable users to save and retrieve their work.",
-        "Contributed to the digital empowerment of Hindi typists by offering a simple tool.",
-        "Marked one of my first web development projects, showcasing technology's potential for addressing real-world needs.",
       ],
     },
   },
   {
     id: "automated-structural-design",
     companyName: "Automated Structural Design",
-    type: "Personal",
-    category: ["Web Dev", "UI/UX"],
+    type: "Professional",
+    category: ["AI", "ConstructionTech"],
     shortDescription:
-      "Developed a user-friendly website for Inscript Hindi typing, addressing the need for a simple tool for Hindi writers to convey data digitally.",
+      "Tự động hoá quy trình thiết kế kết cấu trong xây dựng với Deep Learning và ETABS, triển khai trên nền Python/FastAPI/Docker.",
     // websiteLink: "https://hindityping.namanbarkiya.xyz",
     // githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
     techStack: ["HTML 5", "CSS 3", "Javascript"],
@@ -330,22 +271,142 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "The 'Inscript Hindi Typing Website' project emerged from the need to provide a simple and accessible tool for Hindi writers, especially those in digital news and media, who wished to convey data in Hindi.",
-        "Recognizing the challenges posed by complex software in the market, I set out to create a minimalistic typing area that catered to the needs of a vast community of Hindi typists in India.",
-        "The project was designed to address the specific requirements of users familiar with the Inscript keyboard layout, mapping English and Hindi alphabets for seamless typing. The intuitive interface allowed users to effortlessly switch between languages, streamlining the process of content creation.",
-        "Leveraging HTML and CSS, I crafted the website's UI to ensure a user-friendly experience. Additionally, Local Storage was utilized to enable users to save and retrieve their work, enhancing convenience and productivity.",
-        "The website's focus on user experience and simplicity proved to be a key factor in its popularity among Hindi writers. By offering a tool that reduced the barriers to entry, I contributed to the digital empowerment of Hindi typists who previously faced challenges in conveying their message effectively.",
-        "This project marked one of my initial forays into web development and highlighted the transformative potential of technology in addressing real-world challenges.",
       ],
       bullets: [
-        "Developed a user-friendly website for Inscript Hindi typing.",
-        "Catered to the needs of Hindi writers in digital news and media.",
-        "Created a minimalistic and intuitive typing interface for the Inscript keyboard layout.",
-        "Mapped English and Hindi alphabets to provide a seamless typing experience.",
-        "Utilized HTML and CSS to design a user-friendly UI.",
-        "Implemented Local Storage to enable users to save and retrieve their work.",
-        "Contributed to the digital empowerment of Hindi typists by offering a simple tool.",
-        "Marked one of my first web development projects, showcasing technology's potential for addressing real-world needs.",
+      ],
+    },
+  },
+  {
+    id: "face-emotion",
+    companyName: "Face Emotion Recognition",
+    type: "Professional",
+    category: ["AI", "Mobile", "Computer Vision"],
+    shortDescription:
+      "Hệ thống nhận diện cảm xúc khuôn mặt thời gian thực trên thiết bị di động và triển khai đa nền tảng iOS & Android.",
+    techStack: ["HTML 5", "CSS 3", "Javascript"],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/showcases/emotion-1@2x.png",
+    pagesInfoArr: [
+    ],
+    descriptionDetails: {
+      paragraphs: [
+      ],
+      bullets: [
+      ],
+    },
+  },
+  {
+    id: "hair-segmentation-model",
+    companyName: "Hair Segmentation Model",
+    type: "Professional",
+    category: ["AI", "Mobile", "Computer Vision"],
+    shortDescription: "Xây dựng mô hình phân đoạn tóc trên iOS bằng Python, MobileNet",
+    techStack: ["Python", "MobileNet"],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/showcases/hair-1@2x.png",
+    pagesInfoArr: [
+    ],
+    descriptionDetails: {
+      paragraphs: [
+      ],
+      bullets: [
+      ],
+    },
+  },
+  {
+    id: "zitavn-property-listing-system",
+    companyName: "ZITAVN - Property Listing System",
+    type: "Professional",
+    category: ["Real Estate", "SaaS"],
+    shortDescription: "Hệ thống danh sách bất động sản dựa trên geo‑location",
+    techStack: ["Python", "MobileNet"],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/showcases/zita-1@2x.png",
+    pagesInfoArr: [
+    ],
+    descriptionDetails: {
+      paragraphs: [
+      ],
+      bullets: [
+      ],
+    },
+  },
+  {
+    id: "tabicajp",
+    companyName: "TABICA",
+    type: "Professional",
+    category: ["Marketplace", "SaaS"],
+    shortDescription: "Nền tảng thương mại điện tử cho việc mua‑bán tour văn hoá và hàng hóa, được xây dựng bằng Ruby on Rails & React.",
+    techStack: ["Ruby", "Rails", "React", "Redux", "PostgreSQL"],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/showcases/tabica-1@2x.png",
+    pagesInfoArr: [
+    ],
+    descriptionDetails: {
+      paragraphs: [
+      ],
+      bullets: [
+      ],
+    },
+  },
+  {
+    id: "integrate-human-detection-into-surveillance-systems",
+    companyName: "Integrate Human Detection into Surveillance Systems",
+    type: "Professional",
+    category: ["AI", "Surveillance"],
+    shortDescription: "Tích hợp mô hình YOLO để phát hiện người trong thời gian thực trên nền tảng CCTV platform",
+    techStack: ["YOLO", "Python",],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/showcases/cctv-1@2x.png",
+    pagesInfoArr: [
+    ],
+    descriptionDetails: {
+      paragraphs: [
+      ],
+      bullets: [
+      ],
+    },
+  },
+  {
+    id: "aquania",
+    companyName: "Aquania",
+    type: "Professional",
+    category: ["IoT", "Mobile", "SaaS"],
+    shortDescription: "Nền tảng quản lý hệ thống thủy sản thông minh tích hợp IoT, backend và ứng dụng di động đa nền tảng.",
+    techStack: ["IoT", "Backend", "Frontend", "iOS", "Flutter"],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/showcases/aquania-1@2x.png",
+    pagesInfoArr: [
+    ],
+    descriptionDetails: {
+      paragraphs: [
+      ],
+      bullets: [
+      ],
+    },
+  },
+  {
+    id: "deer-detection",
+    companyName: "Deer Detection",
+    type: "Professional",
+    category: ["AI", "Computer Vision", "Wildlife Monitoring"],
+    shortDescription: "Hệ thống phát hiện hươu bằng Deep Learning trên nền Windows, hỗ trợ kiểm soát và giám sát động vật hoang dã ở phía bắc Nhật Bản.",
+    techStack: ["YOLO", "Windows"],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/showcases/deer-1@2x.png",
+    pagesInfoArr: [
+    ],
+    descriptionDetails: {
+      paragraphs: [
+      ],
+      bullets: [
       ],
     },
   },

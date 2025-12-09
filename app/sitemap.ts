@@ -15,12 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 1.0,
     },
-    // {
-    //   url: `${baseUrl}/skills`,
-    //   lastModified: new Date(),
-    //   changeFrequency: "monthly" as const,
-    //   priority: 0.8,
-    // },
     {
       url: `${baseUrl}/projects`,
       lastModified: new Date(),
@@ -33,18 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
-    // {
-    //   url: `${baseUrl}/experience`,
-    //   lastModified: new Date(),
-    //   changeFrequency: "monthly" as const,
-    //   priority: 0.8,
-    // },
-    // {
-    //   url: `${baseUrl}/contributions`,
-    //   lastModified: new Date(),
-    //   changeFrequency: "monthly" as const,
-    //   priority: 0.8,
-    // },
     {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
