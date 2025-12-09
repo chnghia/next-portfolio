@@ -386,7 +386,7 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
     companyLogoImg: "/showcases/aquania-1@2x.png",
-    youtubeLink: "https://www.youtube.com/embed/mOpTAuOo_9M"
+    youtubeLink: "https://www.youtube.com/embed/mOpTAuOo_9M",
     pagesInfoArr: [
     ],
     descriptionDetails: {
