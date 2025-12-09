@@ -181,6 +181,7 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
     companyLogoImg: "/showcases/counting-1@2x.png",
+    youtubeLink: "https://www.youtube.com/embed/8ah5By6rRm8",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -197,12 +198,11 @@ export const Projects: ProjectInterface[] = [
     category: ["AI", "Edge Computing", "Computer Vision"],
     shortDescription:
       "Hệ thống điều khiển bằng cử chỉ sử dụng Edge AI, Mediapipe để mang lại trải nghiệm không chạm cho các thiết bị hiển thị.",
-    // websiteLink: "https://card.namanbarkiya.xyz/",
-    // githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
     techStack: ["Python", "Edge AI", "Mediapipe", "YOLO", "OpenCV"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
     companyLogoImg: "/showcases/gesture-1@2x.png",
+    youtubeLink: "https://www.youtube.com/embed/Kyb9bFO81Qk",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -224,6 +224,7 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2023-01-01"),
     endDate: new Date("2023-02-15"),
     companyLogoImg: "/showcases/eye-track-1@2x.png",
+    youtubeLink: "https://www.youtube.com/embed/JrbWkPPcGV8",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -245,6 +246,7 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
     companyLogoImg: "/showcases/inspection-1@2x.png",
+    youtubeLink: "https://www.youtube.com/embed/3NO7bw_2yOw",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -287,6 +289,7 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
     companyLogoImg: "/showcases/emotion-1@2x.png",
+    youtubeLink: "https://www.youtube.com/embed/eubkC2m4QAs",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -306,6 +309,7 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
     companyLogoImg: "/showcases/hair-1@2x.png",
+    youtubeLink: "https://www.youtube.com/embed/KEBcxqcqJXA",
     pagesInfoArr: [
     ],
     descriptionDetails: {
@@ -382,6 +386,7 @@ export const Projects: ProjectInterface[] = [
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
     companyLogoImg: "/showcases/aquania-1@2x.png",
+    youtubeLink: "https://www.youtube.com/embed/mOpTAuOo_9M"
     pagesInfoArr: [
     ],
     descriptionDetails: {
